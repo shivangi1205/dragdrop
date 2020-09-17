@@ -9,18 +9,18 @@ save
 
 //new 
   <div cdkDropList class="example-list" (cdkDropListDropped)="drop1($event )">
-      <mat-card>
+      <!-- <mat-card> -->
         <div class="example-box" *ngFor="let news of new ; index as i" cdkDrag>{{news.pos}}</div>
 
-      </mat-card>
+      <!-- </mat-card> -->
             
   </div>
   <button (click)="save()">
 save
   </button>
 
-  <div>
-      <mat-card *ngFor="let pos of pos">
+  <!-- <div>
+      <div *ngFor="let pos of pos">
 {{pos.pos}}
-      </mat-card>
-  </div>
+      </div>
+  </div> -->
