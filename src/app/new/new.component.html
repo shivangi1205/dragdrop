@@ -1,0 +1,26 @@
+<p>new works!</p>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event )">
+    <div class="example-box" *ngFor="let movieName of Movies ; index as i" cdkDrag>{{movieName.task}}{{movieName.order}}</div>
+  </div>
+  <!-- <button (click)="save()">
+save
+  </button> -->
+
+
+//new 
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop1($event )">
+      <mat-card>
+        <div class="example-box" *ngFor="let news of new ; index as i" cdkDrag>{{news.pos}}</div>
+
+      </mat-card>
+            
+  </div>
+  <button (click)="save()">
+save
+  </button>
+
+  <div>
+      <mat-card *ngFor="let pos of pos">
+{{pos.pos}}
+      </mat-card>
+  </div>

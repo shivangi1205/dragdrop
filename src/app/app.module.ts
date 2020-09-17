@@ -9,11 +9,12 @@ import { DragDropModule } from "@angular/cdk/drag-drop";
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
 import { HttpClientModule } from "@angular/common/http";
+import { NewComponent } from './new/new.component';
 @NgModule({
   declarations: [ 
     AppComponent, 
     LoginComponent, 
-    ListComponent
+    ListComponent, NewComponent
   ],
   imports: [
     BrowserModule,

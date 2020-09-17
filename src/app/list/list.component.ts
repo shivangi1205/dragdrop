@@ -32,13 +32,14 @@ export class ListComponent implements OnInit {
     this.bowlers = this.service.Bowlers;
 
     console.log(this.Batsman,this.bowlers);
-this.service.getData().subscribe(res=>{
+this.service.getData({comp_num :'56'}).subscribe(res=>{
   console.log(res)
 })
   
   }
 
   drop(event: CdkDragDrop<string[]>) {
+    console.log(event);
     moveItemInArray(this.pos, event.previousIndex, event.currentIndex);
 //   this.service.updateItem({"pos_1": Object.keys(this.pos)}).subscribe(res=>{
 //   console.log(res)

@@ -134,10 +134,10 @@ export class GlobelServiceService {
   item)
   }
 
-  getData() {
+  getData(data) {
     return this.http.post(
       "https://www.ecomtrails.com/ecom_api_test/index.php/user/fetch_website_template",
-      { comp_num: "" }
+      data
     );
   }
 
